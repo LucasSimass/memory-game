@@ -1,0 +1,1 @@
+export type startGameType = {p1: string, p2: string}
