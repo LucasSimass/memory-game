@@ -1,4 +1,4 @@
-import { generateGame } from "./assets/game-assets/gameGeranator.ts";
+import { CardsGenerator } from "./assets/game-assets/cardGenerator.ts";
 import type { startGameType } from "./assets/types/types.ts";
 
 export class memoryGame {
@@ -11,5 +11,4 @@ export class memoryGame {
   }
 }
 
-
-console.log(generateGame());
+console.log(CardsGenerator.generateCards(10));
