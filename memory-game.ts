@@ -1,3 +1,5 @@
+// CREATED BY LUCAS SIMAS - 02/2026
+
 import { CardsGenerator } from "./assets/game-assets/cardGenerator.ts";
 import { Player } from "./assets/game-assets/player.ts";
 import type { startGameType } from "./assets/types/types.ts";
