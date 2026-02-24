@@ -1,14 +1,23 @@
 import { CardsGenerator } from "./assets/game-assets/cardGenerator.ts";
+import { Player } from "./assets/game-assets/player.ts";
 import type { startGameType } from "./assets/types/types.ts";
 
-export class memoryGame {
-  p1 = "p1";
-  p2 = "p2";
+export class MemoryGame {
+  p1: Player | null = null;
+  p2: Player | null = null;
 
-  startGame({p1, p2}: startGameType) {
-    this.p1 = p2;
-    this.p2 = p2;
+  cardsGame: number[] | null = null
+
+  constructor({p1Name, p2Name, maxNumCards}: startGameType) {
+    this.p1 = new Player({name: p1Name});
+    this.p2 = new Player({name: p2Name});
+    
+    this.cardsGame = CardsGenerator.generateCards(maxNumCards);
   }
-}
 
-console.log(CardsGenerator.generateCards(10));
+  
+  public get cardGame() : number[] {
+    return this.cardGame
+  }
+  
+}

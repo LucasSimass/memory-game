@@ -1,1 +1,5 @@
-export type startGameType = {p1: string, p2: string}
+export type startGameType = {
+  p1Name: string, 
+  p2Name: string,
+  maxNumCards: number  
+}
