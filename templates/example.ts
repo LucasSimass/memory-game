@@ -5,6 +5,9 @@ import { MemoryGame } from "../memory-game.ts";
 // create game and add settings
 const mGame = new MemoryGame({p1Name: "Jhon", p2Name: "Harry", maxNumCards: 10});
 
+// get all cards
+console.log(mGame.getCards); // example -> [1,2,2,1,3,4,5,5,3,4]
+
 // see the game cards with "blur"
 console.log(mGame.getBlurCards);
 
